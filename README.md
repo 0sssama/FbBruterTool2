@@ -34,3 +34,5 @@ BruteForcing my.target@something.com Now...
 
 root@username:~ 
 ```
+# NOTE
+Using this tool is your own responsibility.
