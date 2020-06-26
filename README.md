@@ -1,12 +1,12 @@
 # FbBruterTool
-Facebook Python Brute Force
+Updates Facebook Python Brute Force Tool for Python 3
 
 # Installation
 ```
-pip install mechanize
+pip3 install mechanize
 ```
 ```
-git clone https://github.com/0sssama/FbBruterTool/
+git clone https://github.com/0sssama/FbBruterTool2/
 ```
 ```
 cd FbBruterTool
