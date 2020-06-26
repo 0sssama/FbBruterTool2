@@ -1,5 +1,5 @@
 # FbBruterTool
-Updates Facebook Python Brute Force Tool for Python 3
+Updated Facebook Python Brute Force Tool for Python 3
 
 # Installation
 ```
