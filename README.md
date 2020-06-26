@@ -9,7 +9,7 @@ pip3 install mechanize
 git clone https://github.com/0sssama/FbBruterTool2/
 ```
 ```
-cd FbBruterTool
+cd FbBruterTool2
 ```
 ```
 python fb-bruter.py
