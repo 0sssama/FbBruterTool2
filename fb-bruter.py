@@ -35,7 +35,7 @@ print ('\n\nCracking '+user+' Now...')
 time.sleep(1)
 print ('\n#############################################\n')
 for password in wordlist:
-    if password.strip(' ') == '':
+    if password.strip(' ') == '' or len(password.strip(' '))<6 or len(password.strip(' '))>32:
         pass
     else:
         try:
