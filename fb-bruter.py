@@ -11,7 +11,7 @@
 import time
 import os
 
-os.system('clear')
+os.system('cls' if os.name == 'nt' else 'clear')
 time.sleep(0.5)
 try:
     import mechanize
